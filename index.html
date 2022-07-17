@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/font-awesome.min.css">
+    <style>
+  .container-fluid{
+  position: relative;
+  text-align: center;
+  color: white;
+  
+}
+.d-flex{
+  margin-left: 12px;
+  width: 500px;
+  border-radius: 0%;
+  margin-right: 1px;
+}
+.form-control me-2{
+  border-radius: 0em;
+  column-width: 50px;
+}
+  .exp {
+  font-size: 11px;
+  font-style: italic;
+  color: white;
+  position: absolute;
+  bottom: 5px;
+  left:184px;
+ }
+  .plus{
+  color: #ffe500;
+  font-weight: 500;
+  margin-right: 2px;
+  }
+  form.d-flex input[type=text] {
+
+  padding: 0px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  background: #f1f1f1;
+  margin-right: 0px;
+}
+
+form.d-flex button {
+  float: left;
+  width: 10%;
+  padding: 0px;
+  background: #2874f0;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.d-flex button:hover {
+  background: #2874f0;
+}
+
+form.d-flex::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.ser{
+  margin-left: 0px;
+  width:100px
+}
+.btn btn-primary{
+  background-color: #f1f1f1;
+}
+.item1 {grid-area:header;}
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+
+
+.item1{
+  height: 30px;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header header  menu'
+    'main main main main main main main menu';
+  gap: 2px;
+  background-color: rgb(183, 210, 231);
+  padding: 1px;
+}
+
+.grid-container > div {
+  background-color: white;
+  text-align: left;
+  padding-right: 0%;
+  padding: 2px;
+  font-size: 15px;
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-items: center;
+
+}
+.card img {
+  max-width:50%;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+  width: 250px;
+}
+.carousel-inner {
+  padding: 1em;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+    .card img {
+      height: 11em;
+    }
+ }
+ </style> </head>
+
+  </html>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+        
+        
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li>
+           
+          <img class="mx-auto" style="width:80px" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png">
+        <p><a class="exp" href="/plus">Explore 
+            <span class="plus">Plus</span>
+            <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png" width="10">
+          </a>
+        </p>
+       </li>
+       <li>
+       <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="ser" type="submit"><i class="fa fa-search"></i></button>
+      </form>
+    </li>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <span class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li style="margin-top: 6px; margin-left: 24px; margin-right: 24px;"class="nav-item">
+                <a href="#" style="color:#f1f1f1; " title="Login" data-toggle="popover" data-placement="bottom" data-content="Content">Login</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Notification Prefrences</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">24/7 customer care</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Advertise</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Download App</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                <a style="color: #f1f1f1;" class="nav-link" href="#">Become a seller</a>
+              </li>
+              <li  style="margin-left: 24px; margin-right: 24px;" class="nav-item dropdown">
+                <a style="color: #f1f1f1;" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Notification Prefrences</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">24/7 customer care</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Advertise</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Download App</a></li>
+                </ul>
+              </li>
+            
+              <li class="nav-item">
+                <i class="fa fa-shopping-cart" style="font-size:26px"></i>
+              </li>
+              <li>
+                <h6 style="padding-left:5px ;padding-top:8px ;">Cart</h6>
+              </li>
+            </ul>
+           
+        
+          </div>
+        </div>
+      </nav>
+      <div style="padding-top:20px; font-size:30px; padding-left:60px;">
+        <img style="width:70px" alt="Top Offers" src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100">
+      
+        <a style="font-size: medium; position: absolute;padding-top:-1px; padding-left:15px; "class="nav-link" href="#">Top Offers</a>
+      
+    
+        <img style="width:70px ; margin-left: 60px;" alt="Grocery" src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100">
+  
+      
+        <a style=" font-size: medium;position: absolute;padding-top:-1px; padding-left:140px; "class="nav-link" href="#">Grocery</a>
+      
+     
+        <img style="width:70px ; margin-left: 60px;" alt="Mobiles" src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100">
+    
+      
+        <a style="font-size: medium; position: absolute;padding-top:-1px; margin-left:290px; "class="nav-link" href="#">Mobiles</a>
+      
+      
+        <img style="width:70px; margin-left: 60px;" alt=" Fashion" src="https://rukminim1.flixcart.com/flap/128/128/image/c12afc017e6f24cb.png?q=100">
+      
+      
+        <a style="font-size: medium; position: absolute;padding-top:-1px; padding-left:420px; "class="nav-link" href="#">Fashion</a>
+      
+      
+        <img style="width:70px; margin-left: 60px;" alt="Electronics" src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100">
+      
+      
+        <a style="font-size: medium; position: absolute;padding-top:-1px; padding-left:550px; "class="nav-link" href="#">Electronics</a>
+      
+      
+        <img style="width:70px; margin-left: 60px;" alt="Home" src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100">
+      
+      
+        <a style="font-size: medium; position: absolute;padding-top:-1px; padding-left:710px; "class="nav-link" href="#">Home</a>
+        <img style="width:70px; margin-left: 60px;" alt="Appliances" src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100">
+      
+      
+        <a style="font-size: medium; position: absolute;padding-top:-1px; padding-left:830px; "class="nav-link" href="#">Appliances</a>
+        <img style="width:70px; margin-left: 60px;" alt="Travel" src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100">
+      
+        <a style="font-size: medium; position: absolute;padding-top:-1px; padding-left:990px; "class="nav-link" href="#">Travel</a>
+        <img style="width:70px; margin-left: 60px;" alt="Beauty"  src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100">
+      
+      
+        <a style="font-size: medium; position: absolute;padding-top:-1px; padding-left:1120px; "class="nav-link" href="#">Beauty, toys <br>and more</a>
+      
+      </div>
+      
+      <hr style="margin-top: 50px;">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img  style=" height:320px "src="https://rukminim1.flixcart.com/flap/1688/280/image/7b0efbcbf7ed2653.jpg?q=50" class="d-block w-100" alt="A">
+          </div>
+          <div class="carousel-item">
+            <img style=" height:320px "src="https://rukminim1.flixcart.com/flap/1688/280/image/2ffc0f75825a8b31.jpg?q=50" class="d-block w-100" alt="B">
+          </div>
+          <div class="carousel-item">
+            <img style="height:320px " src="https://rukminim1.flixcart.com/flap/1688/280/image/3cb1ba85d7bd5017.jpg?q=50" class="d-block w-100" alt="C">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span style="background-color: #f1f1f1;" class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span style="background-color: #f1f1f1;"class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <hr style="margin-top: 10px;">
+      <h3 style="margin:10px; background-color: antiquewhite;">Rakhi Special</h3>
+      
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cards-wrapper">
+            <div class="card">
+              <img src="https://rukminim1.flixcart.com/image/150/150/ky0g58w0/hand-messenger-bag/n/o/9/women-sling-bag-pink-e-a-hd-bag-vintage-pink-hand-held-bag-original-imagacbzy9cmwv6n.jpeg?q=70"  class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Handbags</h5>
+               
+                <a href="#" style="color:green;">Min 50% off</a>
+              </div>
+            </div>
+            <div class="card d-none d-md-block">
+              <img src="https://rukminim1.flixcart.com/image/150/150/kflftzk0-0/sari/o/y/c/free-hitesh2series-fumvel-unstitched-original-imafwypg4fwky3a7.jpeg?q=70" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sarees</h5>
+                
+                <a href="#" style="color:green;">Min 60% off</a>
+              </div>
+            </div>
+            <div class="card d-none d-md-block">
+              <img src="https://rukminim1.flixcart.com/image/150/150/kdnf98w0-0/shoe/d/q/u/beads-juti-7-beauty-walk-pink-original-imafugyyauecemuf.jpeg?q=70" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Footwear</h5>
+                
+                <a href="#" style="color:green;">Min 40% off</a>
+              </div>
+            </div>
+              <div class="card">
+                <img src="https://rukminim1.flixcart.com/image/150/150/kdnf98w0-0/shoe/d/q/u/beads-juti-7-beauty-walk-pink-original-imafugyyauecemuf.jpeg?q=70" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Footwear</h5>
+                 
+                  <a href="#" style="color:green;">Min 30% off</a>
+                </div>
+              </div>
+              <div class="card d-none d-md-block">
+                <img src="https://rukminim1.flixcart.com/image/150/150/krwec280/jacket/a/h/i/xl-mnt-7025-montrez-original-imag5hb93udpfs4q.jpeg?q=70" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Jackets</h5>
+                  
+                  <a href="#" style="color:green;">Min 50% off</a>
+                </div>
+              </div>
+              </div>
+            </div>
+              <div class="carousel-item">
+                <div class="cards-wrapper">
+              <div class="card ">
+                <img src="https://rukminim1.flixcart.com/image/150/150/ky0g58w0/hand-messenger-bag/n/o/9/women-sling-bag-pink-e-a-hd-bag-vintage-pink-hand-held-bag-original-imagacbzy9cmwv6n.jpeg?q=70" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Min 20% off</h5>
+                  
+                  <a href="#" style="color:green;">Go somewhere</a>
+                </div>
+              </div>
+           
+              <div class="card d-none d-md-block">
+                <img src="https://rukminim1.flixcart.com/image/150/150/kflftzk0-0/sari/o/y/c/free-hitesh2series-fumvel-unstitched-original-imafwypg4fwky3a7.jpeg?q=70" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sarees</h5>
+                  
+                  <a href="#" style="color:green;">Min 60% off</a>
+                </div>
+              </div>
+              <div class="card d-none d-md-block">
+                <img src="https://rukminim1.flixcart.com/image/150/150/kdnf98w0-0/shoe/d/q/u/beads-juti-7-beauty-walk-pink-original-imafugyyauecemuf.jpeg?q=70" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Footwear</h5>
+                  
+                  <a href="#" style="color:green;">Min 50% off</a>
+                </div>
+              </div>
+              <div class="card d-none d-md-block">
+                <img src="https://rukminim1.flixcart.com/image/150/150/krwec280/jacket/a/h/i/xl-mnt-7025-montrez-original-imag5hb93udpfs4q.jpeg?q=70" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Jackets</h5>
+                  
+                  <a href="#" style="color:green;">Min 50% off</a>
+                </div>
+              </div>
+              <div class="card d-none d-md-block">
+                <img src="https://rukminim1.flixcart.com/image/150/150/kflftzk0-0/sari/o/y/c/free-hitesh2series-fumvel-unstitched-original-imafwypg4fwky3a7.jpeg?q=70" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sarees</h5>
+                 
+                  <a href="#" style="color:green;">Min 50% off</a>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    
+    </div>
+      <hr style="margin-top: 20px;">
+    <div class="grid-container">
+  
+     <div  style="margin-bottom:12px; "class="item1">
+      <h2 style="font-size:larger; padding-left:20px;">Deals of the Day
+      <img style="margin-left: 20px;" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/timer_a73398.svg" width="24" height="24">
+      12:36:36 hours left</h2>
+    </div>
+         <div class="item3">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="cards-wrapper">
+                <div class="card">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/ky0g58w0/hand-messenger-bag/n/o/9/women-sling-bag-pink-e-a-hd-bag-vintage-pink-hand-held-bag-original-imagacbzy9cmwv6n.jpeg?q=70"  class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Handbags</h5>
+                   
+                    <a href="#" style="color:green;">Min 50% off</a>
+                  </div>
+                </div>
+                <div class="card d-none d-md-block">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/kflftzk0-0/sari/o/y/c/free-hitesh2series-fumvel-unstitched-original-imafwypg4fwky3a7.jpeg?q=70" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Sarees</h5>
+                    
+                    <a href="#" style="color:green;">Min 60% off</a>
+                  </div>
+                </div>
+                <div class="card d-none d-md-block">
+                  <img src="https://rukminim1.flixcart.com/image/150/150/kdnf98w0-0/shoe/d/q/u/beads-juti-7-beauty-walk-pink-original-imafugyyauecemuf.jpeg?q=70" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Footwear</h5>
+                    
+                    <a href="#" style="color:green;">Min 40% off</a>
+                  </div>
+                </div>
+              
+                  <div class="card d-none d-md-block">
+                    <img src="https://rukminim1.flixcart.com/image/150/150/kdnf98w0-0/shoe/d/q/u/beads-juti-7-beauty-walk-pink-original-imafugyyauecemuf.jpeg?q=70" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Footwear</h5>
+                     
+                      <a href="#" style="color:green;">Min 30% off</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                  <div class="card">
+                    <img src="https://rukminim1.flixcart.com/image/150/150/krwec280/jacket/a/h/i/xl-mnt-7025-montrez-original-imag5hb93udpfs4q.jpeg?q=70" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Jackets</h5>
+                      
+                      <a href="#" style="color:green;">Min 50% off</a>
+                    </div>
+                  </div>
+                  
+                  <div class="carousel-item">
+                    <div class="cards-wrapper">
+                  <div class="card ">
+                    <img src="https://rukminim1.flixcart.com/image/150/150/ky0g58w0/hand-messenger-bag/n/o/9/women-sling-bag-pink-e-a-hd-bag-vintage-pink-hand-held-bag-original-imagacbzy9cmwv6n.jpeg?q=70" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Min 20% off</h5>
+                      
+                      <a href="#" style="color:green;">Go somewhere</a>
+                    </div>
+                  </div>
+               
+                  <div class="card d-none d-md-block">
+                    <img src="https://rukminim1.flixcart.com/image/150/150/kflftzk0-0/sari/o/y/c/free-hitesh2series-fumvel-unstitched-original-imafwypg4fwky3a7.jpeg?q=70" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Sarees</h5>
+                      
+                      <a href="#" style="color:green;">Min 60% off</a>
+                    </div>
+                  </div>
+                  <div class="card d-none d-md-block">
+                    <img src="https://rukminim1.flixcart.com/image/150/150/kdnf98w0-0/shoe/d/q/u/beads-juti-7-beauty-walk-pink-original-imafugyyauecemuf.jpeg?q=70" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Footwear</h5>
+                      
+                      <a href="#" style="color:green;">Min 50% off</a>
+                    </div>
+                  </div>
+                  <div class="card d-none d-md-block">
+                    <img src="https://rukminim1.flixcart.com/image/150/150/krwec280/jacket/a/h/i/xl-mnt-7025-montrez-original-imag5hb93udpfs4q.jpeg?q=70" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Jackets</h5>
+                      
+                      <a href="#" style="color:green;">Min 50% off</a>
+                    </div>
+                  </div>
+                  <div class="card d-none d-md-block">
+                    <img src="https://rukminim1.flixcart.com/image/150/150/kflftzk0-0/sari/o/y/c/free-hitesh2series-fumvel-unstitched-original-imafwypg4fwky3a7.jpeg?q=70" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Sarees</h5>
+                     
+                      <a href="#" style="color:green;">Min 50% off</a>
+                    </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        
+        </div>
+      </div>  
+
+     
+      <div class="item2">
+        <img style="width:230px" src="https://rukminim1.flixcart.com/flap/464/708/image/24779041c6e3ebf7.jpg?q=70" alt="DT">
+      </div>
+      </div>
+
+    <hr>
+    <div style="background-color: aliceblue;">
+    <h4 style="color: gray;">Flipkart: The One-stop Shopping Destination</h4>
+    <p style="color: gray;">
+      E-commerce is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down.
+      
+      What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop from Flipkart when there are multiple options available to you, well, the below will answer your question. </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
